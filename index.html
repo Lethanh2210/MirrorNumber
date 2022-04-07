@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('');
+    function Mirror(s){
+        if(s <= str.length/2){
+            if(str[s] === str[str.length-1-s]){
+                Mirror(s+1);
+            }else {return false;}
+        }
+        return true;
+    }
+    if(Mirror(0) === true){
+        alert('chuoi doi xung');
+    }else alert('chuoi ko doi xung')
+</script>
+</body>
+</html>
